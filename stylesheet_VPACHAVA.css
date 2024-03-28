@@ -1,0 +1,115 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', 'Helvetica', Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #fffdfd;
+    color: #080000;
+}
+
+header {
+    background-color: #d4f783;
+    color: #1a1a1a;
+    padding: 10px;
+    text-align: end; /* Changed text-align to end */
+}
+
+nav {
+    background-color: #00090c;
+	color: #fcfafa;
+    padding: 12px;
+	text-align: left;
+}
+.menu {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center the flex items horizontally */
+    align-items: center; /* Center the flex items vertically */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: inherit;
+    color: #fdfafa;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.sidebar {
+    height: calc(632%); /* Maintain the same height */
+    width: 215px;
+    position: absolute;
+    top: 132px;
+    left: 1274px;
+    padding-inline-start: 20px; /* Use padding-inline-start instead of padding-left */
+    padding-inline-end: 10px; /* Use padding-inline-end instead of padding-right */
+    background-color: #d4f783;
+    padding-block-start: 0; /* Use padding-block-start instead of padding-top */
+    margin-block-start: 10px; /* Use margin-block-start instead of margin-top */
+    z-index: 100;
+    overflow-x: hidden;
+}
+main {
+    padding: 20px;
+    font-size: 18px;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+.sidebar-content {
+    margin-left: 1267px;
+	margin-top: 15px;
+	margin-bottom: 0px;
+    position: absolute;
+    z-index: 103;
+    width: 160px;
+}
+.content {
+    margin-left: 39px;
+	margin-right: 0px;
+    padding-top: 23px;
+	padding-right: 270px;;
+}
+
+.selected {
+    color: #15f336;
+    text-decoration: inherit; 
+}
+
+/* Research Tab Styles */
+body.research .sidebar-content {
+    margin-left: 1267px;
+    margin-top: -200px;
+    margin-bottom: 0px;
+    position: absolute;
+    z-index: 103;
+    width: 160px;
+}
+
+body.research .sidebar {
+    height: 792vh;
+    width: 215px;
+    position: absolute;
+    top: 132px;
+    left: 1274px;
+    padding-inline-start: 20px;
+    padding-inline-end: 10px;
+    background-color: #d4f783;
+    overflow-x: hidden;
+    padding-block-start: 0;
+    margin-top: 10px;
+    z-index: 100;
+}
+
